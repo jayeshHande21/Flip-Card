@@ -46,7 +46,6 @@
     backface-visibility: hidden;
 
     background: crimson;
-    color: black;
     height: 100%;
     width: 100%;
     border-radius: 10px;
@@ -91,7 +90,7 @@
 }
 
 .social-media a {
-    text-decoration: none;
+    text-decoration: none o;
 }
 
 
