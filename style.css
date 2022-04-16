@@ -1,99 +1,92 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
-    width: 100%;
-    height: 100vh;
-    background: rgb(45, 49, 42);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: rgb(45, 49, 42);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
-    width: 480px;
-    perspective: 10000px;
-    cursor: pointer;
+  width: 480px;
+  perspective: 10000px;
+  cursor: pointer;
 }
+/* color for inner card.. changes into balcj to red  the inner the saters ts */
 
 .card-inner {
-    position: relative;
-    width: 100%;
-    text-align: center;
+  position: relative;
+  width: 100%;
+  text-align: center;
 
-    transform-style: preserve-3d;
-    transition: transform 1s;
-
+  transform-style: preserve-3d;
+  transition: transform 1s;
 }
 
 .front-face {
-
-    backface-visibility: hidden;
-
+  backface-visibility: hidden;
 }
 
 .front-face img {
-    width: 100%;
-    border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .back-face {
+  backface-visibility: hidden;
 
-    backface-visibility: hidden;
+  background: rgb(103, 41, 50);
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
 
-    background: crimson;
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-
-    transform: rotateY(180deg);
-
+  transform: rotateY(180deg);
 }
 
 .back-face h2 {
-    font-size: 40px;
-    margin-top: 10px;
-    font-weight: 90;
-    color: rgb(219, 211, 211);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+  font-size: 40px;
+  margin-top: 10px;
+  font-weight: 90;
+  color: rgb(219, 211, 211);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .back-face p {
-    font-size: 20px;
-    padding: 20px 0px 20px 0px;
-    font-weight: 100;
-    color: rgb(228, 222, 222);
+  font-size: 20px;
+  padding: 20px 0px 20px 0px;
+  font-weight: 100;
+  color: rgb(228, 222, 222);
 }
 
 .social-media i {
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 50%;
-    font-size: 20px;
-    margin: 20px 15px;
-    background: rgb(68, 48, 48);
-
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  margin: 20px 15px;
+  background: rgb(68, 48, 48);
 }
 
 .social-media a {
-    text-decoration: none o;
+  text-decoration: none o;
 }
 
-
 .card:hover .card-inner {
-    transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
