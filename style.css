@@ -17,7 +17,6 @@
 .card {
   width: 480px;
   perspective: 10000px;
-  cursor: pointer;
 }
 /* color for inner card.. changes into balcj to red  the inner the saters ts */
 
